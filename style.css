@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #16161a;
+}
+
+.navbar__container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 50px;
+    align-items: center;
+}
+
+.navbar__container h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    color: #fffffe;
+    font-weight: 400;
+}
+
+#nav__link{
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fffffe;
+}
+
+#nav__link:hover{
+    color: #7f5af0;
+    transition: all 0.3s ease-in    ;
+}
+
+@media screen and (max-width:576px) {
+    .navbar__container{
+        display: block;
+    }
+
+    .navbar__container h1{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar__icon{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.hero{
+    background-color: #16161a;
+    /* background-image: linear-gradient(to right, #7f5af0 0%, #2cb67d 100%); */
+}
+
+.hero__container{
+    align-items: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5rem 50px;
+}
+
+.hero__container--greet{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    width: 180px;
+    height: 50px;
+    color: #fffffe;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    border-bottom: 3px solid #fffffe;
+    margin-bottom: 1rem;
+    /* margin-top: 3.5rem; */
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+}
+
+.hero__container h3{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    line-height: 80px;
+    color: #fffffe;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.hero__container h3 span{
+    font-weight:100 ;
+}
+
+.hero__container p{
+    width: 60%;
+    text-align: center;
+    color: #fffffe;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: 26px;
+    color: #72757e;
+}
+
+.hero__btn{
+    width: 180px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #16161a;
+    cursor: pointer;
+    border: 3px solid #fffffe;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.hero__btn a{
+    text-decoration: none;
+    color: #fffffe;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero__btn:hover{
+    background-color: #7f5af0;
+    border: 3px solid #7f5af0;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width:1140px) {
+    .hero__container{
+        margin: 0 auto;
+        padding: 1rem 50px;
+        height: 80vh;
+    }
+
+    .hero__container h3{
+        font-size: 50px;
+        line-height: 3.5rem;
+    }
+}
+
+.currently{
+    background-color: #16161a;
+}
+
+.currently__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left:100px;
+    margin-right: 100px; */
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 30vh;
+    width: 100%;
+    max-width: 1300px;
+}
+
+@media screen and (min-width:992px) {
+    .currently__container{
+        padding: 0 240px;
+    }   
+}
+
+.currently__text{
+    width: 500px;
+    height: 200px;
+    padding: 0 10px;
+    /* margin-left: 5rem; */
+}
+
+.currently__text h2{
+    font-size: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fffffe;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.currently__text p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #72757e;
+}
+
+.currently__img{
+    display: flex;
+    justify-content: center;
+    /* margin-right: 7rem; */
+}
+
+.currently__img img{
+    border-radius: 15px;
+    width: 60%;
+    height: 60%;
+}
+
+@media  screen and (max-width:1115px) {
+    .currently__container{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .currently__text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 200px;
+        word-wrap: break-word;
+    }
+
+    .currently__img{
+        margin-top: 1rem;
+    }
+}
+
+
+
+.card__sec{
+    background-color: #16161a;
+}
+
+.card__container{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 200px;
+    height: 1000px;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+}
+
+.card__item{
+    width: 100%;
+    height: 20rem;
+    margin: 3.8rem;
+}
+
+.card__image{
+    width: 20rem;
+    height: 10rem;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.card-1{
+    background-image: url(images/bangkit.png);
+}
+
+.card-2{
+    background-image: url(images/sea.png);
+}
+
+.card__item h3{
+    font-size: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fffffe;
+    letter-spacing: 0.5px;
+    margin: 0.5rem 0;
+}
+
+.card__item h4{
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #94a1b2;
+    margin: 0.5rem 0;
+}
+
+.card__item P{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #72757e;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .content{
+    display: block;
+}
+
+#check:checked ~ .less{
+    display: none;
+}
+
+#check:checked ~ label{
+    display: none;
+}
+
+.content{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #72757e;
+    display: none;
+}
+
+.card__item label{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #7f5af0;
+    display: inline-block;
+    margin: 4px 0;
+    cursor: pointer;
+    border-bottom: 2px solid #7f5af0;
+    border-radius: 2px;
+}
+
+.date{
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #2cb67d;
+    margin: 0.5rem 0;
+}
+
+.card__sec h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fffffe;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.card__sec{
+    padding-top: 100px;
+}
